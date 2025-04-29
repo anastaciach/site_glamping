@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:100%;
+    color:var(--text-color);
+    &__list{
+        display: flex;
+    }
+    &__item{
+        display:flex;
+        align-items: center;
+        gap:5px;
+        padding:15px;
+    }
+    &__logo{
+    }
+    &__list-contact{
+        display:flex;
+        align-items: center;
+    }
+}
+.list-contact__phone{
+    display: flex;
+    gap:10px;
+    padding:15px;
+}

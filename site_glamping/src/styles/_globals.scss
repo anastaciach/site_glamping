@@ -5,3 +5,24 @@ body {
   color: var(--color-text);
   // color:green;
 }
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  /**/
+  color: var(--color-secondary);
+}
+button{
+  border:none;
+}
