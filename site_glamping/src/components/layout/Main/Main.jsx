@@ -4,24 +4,33 @@ console.log(services);
 export function SayHello() {
   return <div>Hello!!</div>;
 }
-export function Person({ info, green}) {
-  return (
-    <div classNmae="person">
-      <div className="person__container">
-        <div className="person__name">{info.name}.Человек  состоит в зеленой оргаизации?{green}</div>
-        {/* <div className="person__age">{info.age}</div> */}
-        {/* <div className="person__gender">{info.gender}</div> */}
-      </div>
-      {/* <div className="person__single">{info.single}</div> */}
-    </div>
-  );
+import { useState } from 'react';
+export default function FeedbackForm() {
+    const [isSent, setIsSent] = useState(false);
+    const [message, setMessage] = useState('');
+    if (isSent) {
+        return <h1>Thank you!</h1>;
+    } else {
+        // eslint-disable-next-line
+       
+        return (
+            <form
+                onSubmit={(e) => {
+                    e.preventDefault();
+                    alert(`Sending: "${message}"`);
+                    setIsSent(true);
+                }}
+            >
+                <textarea
+                    placeholder="Message"
+                    value={message}
+                    onChange={(e) =>{setMessage(e.target.value)}
+                        
+                    }
+                />
+                <br />
+                <button type="submit">Send</button>
+            </form>
+        );
+    }
 }
-function Main(props) {
-  console.log(props);
-  return (
-    <></>
-    )
-  
-}
-export default Main;
-

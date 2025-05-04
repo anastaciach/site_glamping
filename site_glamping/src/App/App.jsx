@@ -4,10 +4,11 @@
 
 import "./App.css";
 import Header from "../components/layout/Header/Header";
+import Slider from "../components/ui/Slider/Slider"
 import Footer from "../components/layout/Footer/Footer";
-import Main from "../components/layout/Main/Main";
-import { SayHello } from "../components/layout/Main/Main";
-import { Person } from "../components/layout/Main/Main";
+import FeedbackForm from "../components/layout/Main/Main";
+// import { SayHello } from "../components/layout/Main/Main";
+// import { Person } from "../components/layout/Main/Main";
 import React from "react";
 import "./App.css"; // Убедитесь, что путь к вашему CSS правильный
 
@@ -17,7 +18,7 @@ export default function App() {
   
   return (
     <><Header/>
-
+    <Slider/>
     </>
   );
 }
