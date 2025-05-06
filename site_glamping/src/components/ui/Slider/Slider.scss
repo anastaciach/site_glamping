@@ -1,5 +1,15 @@
+.slider{
+    color:white;
 
-.silder-image{
-    width:500px;
-    height: 500px;
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &-image{
+        width:500px;
+        height: 500px;
+    }
 }
+
