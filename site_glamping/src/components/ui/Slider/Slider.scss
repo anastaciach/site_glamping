@@ -1,15 +1,32 @@
-.slider{
-    color:white;
+.slider {
+  color: white;
 
-
-    &__wrapper{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    &-image{
-        width:500px;
-        height: 500px;
-    }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding:254px 254px 162px 254px;
+  }
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    position: absolute; 
+    top: 50%; 
+    left: 0;
+    right: 0;
+    transform: translateY(-50%); 
+    padding: 0 10px; 
+  }
+  &__descrription{
+    margin-bottom:30px;
+  }
+  &__title{
+    margin-bottom:10px;
+  }
+  &-image {
+    width: 500px;
+    height: 500px;
+  }
 }
-
