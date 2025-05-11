@@ -34,11 +34,12 @@
     gap: 20px;
     justify-content: space-between;
     align-items: center;
+    position: relative;
   }
   &__item {
     display: flex;
     flex-direction: column;
-    // flex: 1;
+    flex: 1;
     
   }
   &__label{
@@ -47,23 +48,17 @@
     color: #f3efe8;
     padding-bottom: 8px;
   }
-  &__input {
+  &__input, &__select {
     border-radius: 10px;
     padding: 16px 15px;
     outline: none;
     border: none;
     color: #1a3a27;
     width: 100%;
-    box-sizing: border-box;
   }
   &__select {
-    border-radius: 10px;
-    padding: 16px 15px;
-    outline: none;
-    border: none;
-    color: #1a3a27;
-    width: 100%;
-    box-sizing: border-box;
+    appearance: none;
+    padding: 16px 80px 16px 15px;
   }
 }
 
@@ -77,6 +72,18 @@
     cursor: pointer;
   }
 }
+.select__wrapper{
+  position: relative;
+  
+  img{
+    position:absolute;
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor: pointer;
+  }
+}
+
 //Кастомизация react-datePicker
 .react-datepicker {
   font-family: Arial, sans-serif;
@@ -84,11 +91,14 @@
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+.react-datepicker-wrapper{
+  width:100%;
+}
 .react-datepicker__header {
   background-color: #3b9254;
   color: white;
   border-bottom: none;
-  padding: 8px 15px;
+  padding: 15px 8px 8px;
 }
 .react-datepicker__current-month {
   font-weight: 700;

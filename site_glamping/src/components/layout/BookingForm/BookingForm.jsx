@@ -6,6 +6,9 @@ import ru from "date-fns/locale/ru";
 import Button from "../../ui/Button";
 import "./BookingForm.scss";
 
+import userSVG from'../../../assets/images/svg/user.svg'
+// import { ReactComponent as UserSVG } from '../../../assets/images/svg/user.svg'; 
+
 export default function BookingForm() {
   const [checkIn, setCheckIn] = useState(null);
   const [checkOut, setCheckOut] = useState(null);
@@ -104,7 +107,7 @@ export default function BookingForm() {
           </div>
           <div className="booking-form__item" >
             <label htmlFor="count-guests" className="booking-form__label">КОЛИЧЕСТВО ГОСТЕЙ</label>
-            <div>
+            <div className="select__wrapper">
               <select
                 name="count-guests"
                 id="count-guests"
@@ -115,9 +118,10 @@ export default function BookingForm() {
                 <option value="4-adults">4 взрослых</option>
                 <option value="5-adults">5 взрослых</option>
               </select>
+                <img src={userSVG} className="select_image" />
             </div>
           </div>
-          <Button style={{ backgroundColor: "black",}}>Забронировать</Button>
+          <Button style={{ backgroundColor: "black",position:'relative',top:'0.8rem',}}>Забронировать</Button>
         </div>
       </div>
     </section>
