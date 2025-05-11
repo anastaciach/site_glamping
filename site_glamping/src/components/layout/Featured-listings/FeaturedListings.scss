@@ -1,0 +1,14 @@
+.featured-listings{
+
+    &__wrapper{
+        display: flex;
+    }
+    &__title-group{display: flex;
+        width: 100%;
+    justify-content: space-between;
+    }
+    &__title{}
+}
+.gallery__list{}
+.gallery__item{}
+.gallery__controls{}

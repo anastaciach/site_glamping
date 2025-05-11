@@ -6,6 +6,7 @@ import "./App.css";
 import Header from "../components/layout/Header/Header";
 import Slider from "../components/ui/Slider/Slider"
 import BookingForm from '../components/layout/BookingForm/BookingForm';
+import FeaturedListings from "../components/layout/Featured-listings/FeaturedListings";
 import Footer from "../components/layout/Footer/Footer";
 import FeedbackForm from "../components/layout/Main/Main";
 // import { SayHello } from "../components/layout/Main/Main";
@@ -21,6 +22,7 @@ export default function App() {
     <><Header/>
     <Slider/>
     <BookingForm></BookingForm>
+    <FeaturedListings></FeaturedListings>
     </>
   );
 }
