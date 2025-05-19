@@ -1,4 +1,4 @@
-export const sliderList=[
+export const sliderImg=[
     {
         "title":"Глэмпинг в Казани",
         "description":"на холмистых склонах в окружении соснового бора с красивым голубым небом",

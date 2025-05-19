@@ -9,6 +9,7 @@ import BookingForm from '../components/layout/BookingForm/BookingForm';
 import FeaturedListings from "../components/layout/Featured-listings/FeaturedListings";
 import Footer from "../components/layout/Footer/Footer";
 import FeedbackForm from "../components/layout/Main/Main";
+import Rental from "../components/layout/Rental/Rental"
 // import { SayHello } from "../components/layout/Main/Main";
 // import { Person } from "../components/layout/Main/Main";
 import React from "react";
@@ -23,6 +24,7 @@ export default function App() {
     <Slider/>
     <BookingForm></BookingForm>
     <FeaturedListings></FeaturedListings>
+    <Rental></Rental>
     </>
   );
 }

@@ -1,14 +1,15 @@
 import { useState } from "react";
-import { sliderList } from "./Slider-data.js";
+import { sliderImg } from "./Slider-data.js";
 import ButtonArrow from "../../common/Button-arrow/Button-arrow.jsx";
 import Button from "../../ui/Button.jsx";
 import "./Slider.scss";
 import "../../common/Button-arrow/Button-arrow.scss";
 
-export default function Slider() {
+export default function Slider({sliderList=sliderImg}) {
   const [index, setIndex] = useState(0);
   let hasPrev = index > 0;
   let hasNext = index < sliderList.length - 1;
+  
   function handlePrevClick() {
     if (hasPrev) setIndex(index - 1);
   }
